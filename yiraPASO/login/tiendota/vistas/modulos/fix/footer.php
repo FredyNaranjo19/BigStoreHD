@@ -1,4 +1,3 @@
-<body class="animsition">
 <!-- Footer -->
 <footer class="bg3 p-t-45 p-b-22">
     <div class="container">
@@ -85,7 +84,6 @@
             <div>
             <p class="stext-107 cl6 txt-center">				
              Todos los derechos reservados a Twynco S de RL de CV &copy;<script>document.write(new Date().getFullYear());</script> </a>
-
             </p>
         </div>
     </div>

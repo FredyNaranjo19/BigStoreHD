@@ -19,7 +19,6 @@
 				<a href="inicio" class="logo">
 					<img src="vistas/img/icons/Yira-Negro.png" alt="IMG-LOGO">
 				</a>
-
 				<!-- Menu desktop -->
 				<div class="menu-desktop">
 					<ul class="main-menu">
@@ -42,7 +41,6 @@
 					<div class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 js-show-modal-search">
 						<i class="zmdi zmdi-search"></i>
 					</div>
-
 					<a href="#" class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti js-show-cart" data-notify="0">
 						<i class="zmdi zmdi-favorite-outline"></i>
 					</a>
@@ -191,7 +189,7 @@
 			
 			<div class="w-full">
 				<div class="header-cart-total w-full p-tb-0">
-					Total: $75.00
+					Total: <!--suma precio-->
 				</div>
 			</div>
 		</div>
