@@ -86,7 +86,7 @@
 				</h3>
 			</div>
 			<div class="row">
-				<div class="col-md-5 col-xl-3 p-b-30">
+				<div class="col-md-5 col-xl-3 p-b-20">
 					<!-- Block1 -->
 					<div class="block1 wrap-pic-w">
 						<img src="vistas/img/banner-01.jpg" alt="IMG-BANNER">
@@ -107,8 +107,9 @@
 					</div>
 				</div>
 
-				<div class="col-md-5 col-xl-3 p-b-30">
+				<div class="col-md-5 col-xl-3 p-b-20">
 					<!-- Block1 -->
+					<!-- 
 					<div class="block1 wrap-pic-w">
 						<img src="vistas/img/banner-03.jpg" alt="IMG-BANNER">
 
@@ -125,14 +126,14 @@
 								</div>
 							</div>
 						</a>
-					</div>
+					</div>-->
 				</div>
 			</div>
 		</div>
 	</div>
 
 	<!-- Product -->
-	<section class="bg0 p-t-15 p-b-80">
+	<section class="bg0 p-t-15 p-b-30">
 		<div class="container">
 			<div class="p-b-10">
 				<h3 class="ltext-103 cl5">
@@ -140,7 +141,7 @@
 				</h3>
 			</div>
 
-			<div class="flex-w flex-sb-m p-b-52">
+			<div class="flex-w flex-sb-m p-b-32">
 				<div class="flex-w flex-l-m filter-tope-group m-tb-10">
 					<button class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5 how-active1" data-filter="*">
 						Todos los productos
@@ -209,12 +210,6 @@
 
 								<li class="p-b-6">
 									<a href="#" class="filter-link stext-106 trans-04">
-										Popularidad
-									</a>
-								</li>
-
-								<li class="p-b-6">
-									<a href="#" class="filter-link stext-106 trans-04">
 										Calificación
 									</a>
 								</li>
@@ -274,12 +269,6 @@
 										$150.00 - $200.00
 									</a>
 								</li>
-
-								<li class="p-b-6">
-									<a href="#" class="filter-link stext-106 trans-04">
-										$200.00+
-									</a>
-								</li>
 							</ul>
 						</div>
 
@@ -306,16 +295,6 @@
 
 									<a href="#" class="filter-link stext-106 trans-04">
 										Azul
-									</a>
-								</li>
-
-								<li class="p-b-6">
-									<span class="fs-15 lh-12 m-r-6" style="color: #b3b3b3;">
-										<i class="zmdi zmdi-circle"></i>
-									</span>
-
-									<a href="#" class="filter-link stext-106 trans-04">
-										Gris
 									</a>
 								</li>
 
@@ -405,7 +384,7 @@
 								</a>
 
 								<span class="stext-105 cl3">
-									$16.64
+									$
 								</span>
 							</div>
 
@@ -455,7 +434,7 @@
 			</div>
 
 			<!-- Load more -->
-			<div class="flex-c-m flex-w w-full p-t-45">
+			<div class="flex-c-m flex-w w-full p-t-25">
 				<a href="#" class="flex-c-m stext-101 cl5 size-103 bg2 bor1 hov-btn1 p-lr-15 trans-04">
 					Ver más
 				</a>
@@ -600,12 +579,12 @@
 							<!--  -->
 							<div class="flex-w flex-m p-l-100 p-t-40 respon7">
 								<div class="flex-m bor9 p-r-10 m-r-11">
-									<a href="#" class="fs-14 cl3 hov-cl1 trans-04 lh-10 p-lr-5 p-tb-2 js-addwish-detail tooltip100" data-tooltip="Agregar a favoritos">
+									<a href="#" class="fs-20 cl3 hov-cl1 trans-04 lh-10 p-lr-5 p-tb-2 js-addwish-detail tooltip100" data-tooltip="Agregar a favoritos">
 										<i class="zmdi zmdi-favorite"></i>
 									</a>
 								</div>
 
-								<a href="#" class="fs-14 cl3 hov-cl1 trans-04 lh-10 p-lr-5 p-tb-2 m-r-8 tooltip100" data-tooltip="Pedir por Whatsapp">
+								<a href="#" class="fs-20 cl3 hov-cl1 trans-04 lh-10 p-lr-5 p-tb-2 m-r-8 tooltip100" data-tooltip="Pedir por Whatsapp">
 									<i class="fa fa-whatsapp"></i>
 								</a>
 							</div>

@@ -3,49 +3,34 @@
 class ctrBTEmpresas{
 
     static public function ctrgetEmpresas(){
-        $response = BTEmpresas::getEmpresas();
+        $response = BTEmpresas::BTgetEmpresas();
         return $response;
     }
 
     static public function ctrBTCategoriasPre(){
-        $response = BTEmpresas::BTCategoriasPre();
+        $response = BTEmpresas::BTTCategoriasPre();
         return $response;
     }
 
     static public function ctrget1Empresa(){
-        $response = BTEmpresas::get1Empresa();
+        $response = BTEmpresas::BTget1Empresa();
         return $response;
     }
 
     static public function ctrget1categoria(){
-        $response = BTEmpresas::get1categoria();
-        return $response;
-    }
-
-    static public function ctrEmpresasLimit(){
-        $tabla = "empresas";
-        $response = BTEmpresas::EmpresasLimit($tabla);
+        $response = BTEmpresas::BTget1categoria();
         return $response;
     }
 
     static public function ctrgetCategoriaEmpresa(){
-        $response = BTEmpresas::getCategoriaEmpresa();
+        $response = BTEmpresas::BTgetCategoriaEmpresa();
         return $response;
     }
     
     static public function ctrgetProduCategoEmp($idEmpresa, $idCategoria){
-        $response = BTEmpresas::getProduCategoEmp($idEmpresa, $idCategoria);
+        $response = BTEmpresas::BTgetProduCategoEmp($idEmpresa, $idCategoria);
         return $response;
     }
 
-    static public function ctrMostrarClientes($item, $valor, $empresa){
-
-        $tabla = "clientes_empresa";
-
-        $response = BTEmpresas::BTMostrarClientes($tabla, $item, $valor, $empresa);
-
-        return $response;
-    
-    }
 }
 ?>

@@ -1,4 +1,4 @@
-    <section class="bg-img1 txt-center p-lr-15 p-tb-92" style="background-image: url('vistas/img/bg-03.jpg');">
+    <section class="bg-img1 txt-center p-lr-15 p-tb-92" style="background-image: url('vistas/img/bg-04.jpg');">
 		<h2 class="ltext-105 cl0 txt-center">
 			Empresas
 		</h2>
@@ -7,7 +7,7 @@
 	<div class="sec-banner bg0 p-t-40 p-b-25">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-5 col-xl-3 p-b-30">
+				<div class="col-md-5 col-xl-3 p-b-20">
 					<!-- Block1 -->
 					<?php $empresas = ctrBTEmpresas::ctrgetEmpresas();
 					foreach ($empresas as $empresa){
@@ -31,7 +31,7 @@
 					</div>
 				</div>
 
-                <div class="col-md-5 col-xl-3 p-b-30">
+                <div class="col-md-5 col-xl-3 p-b-20">
 					<!-- Block1 -->
 					<!-- <div class="block1 wrap-pic-w">
 						<img src="vistas/img/banner-03.jpg" alt="IMG-BANNER">

@@ -32,6 +32,32 @@
                         </div>
                     </div>
                 </div>
+
+
+                <div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item">
+                <div class="block2">
+                        <div class="block2-pic hov-img0">
+                            
+                            <img src="vistas/img/product-01.jpg" alt="IMG-PRODUCT">
+
+                            <a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
+                                Vista Rapida
+                            </a>
+                        </div>
+
+                        <div class="block2-txt flex-w flex-t p-t-14">
+                            <div class="block2-txt-child1 flex-col-l ">
+                                <a href="ProductoDetalle" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
+                                Cheetos 
+                                </a>
+
+                                <span class="stext-105 cl3">
+                                    $16.64
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 </div>
         </div>     
 </div>
@@ -172,12 +198,12 @@
                             
                             <div class="flex-w flex-m p-l-100 p-t-40 respon7">
                                 <div class="flex-m bor9 p-r-10 m-r-11">
-                                    <a href="#" class="fs-14 cl3 hov-cl1 trans-04 lh-10 p-lr-5 p-tb-2 js-addwish-detail tooltip100" data-tooltip="Agregar a favoritos">
+                                    <a href="#" class="fs-20 cl3 hov-cl1 trans-04 lh-10 p-lr-5 p-tb-2 js-addwish-detail tooltip100" data-tooltip="Agregar a favoritos">
                                         <i class="zmdi zmdi-favorite"></i>
                                     </a>
                                 </div>
 
-                                <a href="https://api.whatsapp.com/send?phone=527715565754" class="fs-14 cl3 hov-cl1 trans-04 lh-10 p-lr-5 p-tb-2 m-r-8 tooltip100" data-tooltip="Pedir por Whatsapp">
+                                <a href="https://api.whatsapp.com/send?phone=527715565754" class="fs-20 cl3 hov-cl1 trans-04 lh-10 p-lr-5 p-tb-2 m-r-8 tooltip100" data-tooltip="Pedir por Whatsapp">
                                     <i class="fa fa-whatsapp"></i>
                                 </a>
                             </div>

@@ -19,6 +19,7 @@
 				<div class="slick2">
 					<div class="item-slick2 p-l-15 p-r-15 p-t-15 p-b-15">
 						<!-- Block2 -->
+						
 						<div class="block2">
 							<div class="block2-pic hov-img0">
 								<img src="vistas/img/product-01.jpg" alt="IMG-PRODUCT">
@@ -51,6 +52,7 @@
 
 					<div class="item-slick2 p-l-15 p-r-15 p-t-15 p-b-15">
 						<!-- Block2 -->
+						<!-- 
 						<div class="block2">
 							<div class="block2-pic hov-img0">
 								<img src="vistas/img/product-08.jpg" alt="IMG-PRODUCT">
@@ -78,7 +80,7 @@
 									</a>
 								</div>
 							</div>
-						</div>
+						</div>-->
 					</div>
 				</div>
 			</div>
@@ -222,12 +224,12 @@
 							<!--  -->
 							<div class="flex-w flex-m p-l-100 p-t-40 respon7">
 								<div class="flex-m bor9 p-r-10 m-r-11">
-									<a href="#" class="fs-14 cl3 hov-cl1 trans-04 lh-10 p-lr-5 p-tb-2 js-addwish-detail tooltip100" data-tooltip="Agregar a favoritos">
+									<a href="#" class="fs-20 cl3 hov-cl1 trans-04 lh-10 p-lr-5 p-tb-2 js-addwish-detail tooltip100" data-tooltip="Agregar a favoritos">
 										<i class="zmdi zmdi-favorite"></i>
 									</a>
 								</div>
 
-								<a href="#" class="fs-14 cl3 hov-cl1 trans-04 lh-10 p-lr-5 p-tb-2 m-r-8 tooltip100" data-tooltip="Pedir por Whatsapp">
+								<a href="#" class="fs-20 cl3 hov-cl1 trans-04 lh-10 p-lr-5 p-tb-2 m-r-8 tooltip100" data-tooltip="Pedir por Whatsapp">
 									<i class="fa fa-whatsapp"></i>
 								</a>
 							</div>

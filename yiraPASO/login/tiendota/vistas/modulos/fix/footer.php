@@ -1,9 +1,9 @@
 <!-- Footer -->
-<footer class="bg3 p-t-45 p-b-22">
+<footer class="bg3 p-t-45 p-b-15">
     <div class="container">
         <div class="row">
-            <div class="col-sm-6 col-lg-4 p-b-30">
-                <h4 class="stext-301 cl0 p-b-30">
+            <div class="col-sm-6 col-lg-4 p-b-15">
+                <h4 class="stext-301 cl0 p-b-15">
                     Categorias
                 </h4>
 
@@ -35,7 +35,7 @@
             </div>
 
             <div class="col-sm-6 col-lg-4 p-b-30">
-                <h4 class="stext-301 cl0 p-b-30">
+                <h4 class="stext-301 cl0 p-b-15">
                     Empresas
                 </h4>
 
@@ -62,7 +62,7 @@
             </div>
 
             <div class="col-sm-6 col-lg-3 p-b-30">
-                <h4 class="stext-301 cl0 p-b-30">
+                <h4 class="stext-301 cl0 p-b-15">
                     Contactanos
                 </h4>
 
