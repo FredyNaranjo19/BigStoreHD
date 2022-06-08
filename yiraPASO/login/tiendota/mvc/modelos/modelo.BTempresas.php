@@ -12,8 +12,17 @@ class BTEmpresas
         $conex = null;
     }
 
-    static public function BTCategoriasPre(){
-        $conex = Conexion::conectar()->prepare("SELECT * FROM bazar_categorias");
+    static public function BTCategorias(){
+        $conex = Conexion::conectar()->prepare("SELECT * FROM bs_categorias");
+        $conex-> execute();
+        return $conex->fetchAll();
+        $conex->close();
+        $conex = NULL;
+    }
+
+    static public function BTSubcategorias($idbscategoria){
+        $conex = Conexion::conectar()->prepare("SELECT * FROM bs_subcategorias where id_bscategoria = :id_bscategoria");
+        $conex->bindParam(":id_bscategoria", $idbscategoria, PDO::PARAM_STR);
         $conex-> execute();
         return $conex->fetchAll();
         $conex->close();
@@ -23,15 +32,26 @@ class BTEmpresas
     static public function BTget1Empresa($idEmpresa)
     {
         $conex = Conexion::conectar()->prepare("SELECT * FROM empresas WHERE id_empresas = :id_empresa");
+        $conex->bindParam(":id_empresa", $idEmpresa, PDO::PARAM_STR);
         $conex-> execute();
         return $conex->fetch();
         $conex->close();
         $conex = NULL;
     }
 
-    static public function BTget1categoria($idEmpresa)
+    static public function BTget1categoria($idbscategoria)
     {
-        $conex = Conexion::conectar()->prepare("SELECT * FROM bazar_categorias WHERE id_categoria = :id_categoria");
+        $conex = Conexion::conectar()->prepare("SELECT * FROM bs_categorias WHERE id_bscategoria = :id_bscategoria");
+        $conex->bindParam(":id_bscategoria", $idbscategoria, PDO::PARAM_STR);
+        $conex-> execute();
+        return $conex->fetch();
+        $conex->close();
+        $conex = NULL;
+    }
+    static public function BTget1subcategoria($idsubcategoriabs)
+    {
+        $conex = Conexion::conectar()->prepare("SELECT * FROM bs_categorias WHERE id_bscategoria = :id_bscategoria");
+        $conex->bindParam(":id_subcategoriabs", $idsubcategoriabs, PDO::PARAM_STR);
         $conex-> execute();
         return $conex->fetch();
         $conex->close();

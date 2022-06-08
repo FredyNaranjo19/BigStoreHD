@@ -3,7 +3,7 @@
 class Conexion{
 
 	static public function conectar(){
-		$link= new PDO("mysql:host=localhost;dbname=yira_paso2",
+		$link= new PDO("mysql:host=localhost;dbname=yira_base",
 		"root",
 		"");
 		$link->exec("set names utf8");

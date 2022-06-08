@@ -3,7 +3,7 @@
 class BigShopProductos{
     static public function BTMostrarProductosLimit(){
 
-        $conex = Conexion::conectar()->prepare("SELECT * FROM tv_productos INNER JOIN productos ON productos.id_producto = tv_productos.id_producto LIMIT 20");
+        $conex = Conexion::conectar()->prepare("SELECT * FROM tv_productos INNER JOIN productos ON productos.id_producto = tv_productos.id_producto LIMIT 16");
         $conex -> execute();
         return $conex -> fetchAll();
         $conex ->close();

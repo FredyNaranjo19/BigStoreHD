@@ -4,7 +4,70 @@
 			Wizpy
 		</h2>
 	</section>
-	<!---->      
+	<!---->
+	
+	<div class="sec-banner bg0 p-t-40 p-b-25">
+		<div class="container">
+            <div class="p-b-45">
+                <h3 class="ltext-106 cl5 ">
+                    Subcategorias
+                </h3>
+            </div>
+			<div class="row">
+				<div class="col-md-5 col-xl-3 p-b-30">
+					<!-- Block1 --> 
+					<!-- categorias propias -->
+					<div class="block1 wrap-pic-w">
+						<img src="vistas/img/banner-02.jpg" alt="IMG-BANNER">
+
+						<a href="#" class="block1-txt ab-t-l s-full flex-col-l-sb p-lr-38 p-tb-34 trans-03 respon3">
+							<div class="block1-txt-child1 flex-col-l">
+								<span class="block1-name ltext-102 trans-04 p-b-8">
+									Hombre
+								</span>
+
+								<span class="block1-info stext-102 trans-04">
+									Tendencia
+								</span>
+							</div>
+
+							<div class="block1-txt-child2 p-b-4 trans-05">
+								<div class="block1-link stext-101 cl0 trans-09">
+									Compra ya
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+
+                <div class="col-md-5 col-xl-3 p-b-30">
+					<!-- Block1 -->
+					<!--<div class="block1 wrap-pic-w">
+						<img src="vistas/img/banner-03.jpg" alt="IMG-BANNER">
+
+						<a href="#" class="block1-txt ab-t-l s-full flex-col-l-sb p-lr-38 p-tb-34 trans-03 respon3">
+							<div class="block1-txt-child1 flex-col-l">
+								<span class="block1-name ltext-102 trans-04 p-b-8">
+									Accesorios
+								</span>
+
+								<span class="block1-info stext-102 trans-04">
+									Tendencia
+								</span>
+							</div>
+
+							<div class="block1-txt-child2 p-b-4 trans-05">
+								<div class="block1-link stext-101 cl0 trans-09">
+									Compra ya
+								</div>
+							</div>
+						</a>
+					</div>-->
+					<!--Cerrar-->
+				</div>
+			</div>
+		</div>
+	</div>
 
     <section class="sec-relate-product bg0 p-t-45 p-b-105">
 		<div class="container">
