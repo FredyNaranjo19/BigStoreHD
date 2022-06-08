@@ -12,6 +12,12 @@ class ctrBTEmpresas{
         return $response;
     }
 
+    static public function ctrBTCategoriaslimit(){
+        $response = BTEmpresas::BTCategoriaslimit();
+        return $response;
+    }
+
+
     static public function ctrBTSubcategorias(){
         $response = BTEmpresas::BTSubcategorias();
         return $response;

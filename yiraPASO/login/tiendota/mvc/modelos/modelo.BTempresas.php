@@ -19,6 +19,13 @@ class BTEmpresas
         $conex->close();
         $conex = NULL;
     }
+    static public function BTCategoriaslimit(){
+        $conex = Conexion::conectar()->prepare("SELECT * FROM bs_categorias LIMIT 4");
+        $conex-> execute();
+        return $conex->fetchAll();
+        $conex->close();
+        $conex = NULL;
+    }
 
     static public function BTSubcategorias($idbscategoria){
         $conex = Conexion::conectar()->prepare("SELECT * FROM bs_subcategorias where id_bscategoria = :id_bscategoria");

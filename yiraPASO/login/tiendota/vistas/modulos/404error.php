@@ -1,6 +1,5 @@
 <?php?>
 <br></br>
-<body class="animsition">
 
 <div class="sec-banner bg0 p-t-40 p-b-25">
 		<div class="container">

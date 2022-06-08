@@ -122,7 +122,7 @@
             $('.js-addwish-b2').each(function(){
                 var nameProduct = $(this).parent().parent().find('.js-name-b2').html();
                 $(this).on('click', function(){
-                    swal(nameProduct, "Fue agregado a tus me gusta", "success");
+                    swal(nameProduct, "Fue agregado a tus me gusta", "De manera exitosa");
 
                     $(this).addClass('js-addedwish-b2');
                     $(this).off('click');
@@ -133,7 +133,7 @@
                 var nameProduct = $(this).parent().parent().parent().find('.js-name-detail').html();
 
                 $(this).on('click', function(){
-                    swal(nameProduct, "Fue agregado a tus me gusta", "success");
+                    swal(nameProduct, "Fue agregado a tus me gusta", "De manera exitosa");
 
                     $(this).addClass('js-addedwish-detail');
                     $(this).off('click');
@@ -145,7 +145,7 @@
             $('.js-addcart-detail').each(function(){
                 var nameProduct = $(this).parent().parent().parent().parent().find('.js-name-detail').html();
                 $(this).on('click', function(){
-                    swal(nameProduct, "Fue agregado al carrito", "success");
+                    swal(nameProduct, "Fue agregado al carrito", "De manera exitosa");
                 });
             });
         

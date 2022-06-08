@@ -29,7 +29,7 @@ class BigShopProductos{
     }
 
     static public function BTgetProductoCategoria($id_categoria){
-        $conex = Conexion::conectar()->prepare("SELECT * FROM tv_productos INNER JOIN productos ON producto.id_categoria = sh.productos.id_tv_productos WHERE tv_productos.id_categorias = :id_categorias");
+        $conex = Conexion::conectar()->prepare("SELECT * FROM tv_productos INNER JOIN productos ON producto.id_categoria = tv.productos.id_tv_productos WHERE tv_productos.id_categoria = :id_categoria");
         $conex -> bindParam(":id_categoria", $id_categoria, PDO::PARAM_STR);
         $conex -> execute();
         return $conex -> fetchAll();
