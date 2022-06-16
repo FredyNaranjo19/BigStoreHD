@@ -12,8 +12,6 @@
 					<?php $categorias = ctrBTEmpresas::ctrBTCategorias();
 					foreach ($categorias as $catego){
 					?>
-                    <!--info para categorias aqui-->  
-
 					<div class="block1 wrap-pic-w">
 						<img src="vistas/img/banner-02.jpg" alt="IMG-BANNER">
 

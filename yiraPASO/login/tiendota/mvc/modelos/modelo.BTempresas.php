@@ -57,7 +57,7 @@ class BTEmpresas
     }
     static public function BTget1subcategoria($idsubcategoriabs)
     {
-        $conex = Conexion::conectar()->prepare("SELECT * FROM bs_categorias WHERE id_bscategoria = :id_bscategoria");
+        $conex = Conexion::conectar()->prepare("SELECT * FROM bs_subcategorias WHERE id_bscategoria = :id_bscategoria");
         $conex->bindParam(":id_subcategoriabs", $idsubcategoriabs, PDO::PARAM_STR);
         $conex-> execute();
         return $conex->fetch();

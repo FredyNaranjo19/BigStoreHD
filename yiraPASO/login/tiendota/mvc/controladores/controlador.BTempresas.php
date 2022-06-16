@@ -17,7 +17,6 @@ class ctrBTEmpresas{
         return $response;
     }
 
-
     static public function ctrBTSubcategorias(){
         $response = BTEmpresas::BTSubcategorias();
         return $response;

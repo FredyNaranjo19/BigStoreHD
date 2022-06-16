@@ -25,10 +25,6 @@
 								<span class="block1-name ltext-102 trans-04 p-b-8">
 									Hombre
 								</span>
-
-								<span class="block1-info stext-102 trans-04">
-									Tendencia
-								</span>
 							</div>
 
 							<div class="block1-txt-child2 p-b-4 trans-05">

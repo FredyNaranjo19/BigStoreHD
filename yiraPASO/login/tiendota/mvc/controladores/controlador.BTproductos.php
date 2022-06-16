@@ -8,11 +8,6 @@ class BTProductos{
         return $response;
     }
 
-    static public function BTgetProductosCategoria($id_categoria){
-        $response = BigShopProductos::BTgetProductoCategoria();
-        return $response;
-    }
-
     static public function BTgetEmpresaProductos($idEmpresa){
         $response = BigShopProductos::BTgetEmpresaProductos($idEmpresa);
         return $response;

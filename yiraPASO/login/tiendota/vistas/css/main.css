@@ -74,10 +74,6 @@
 [ Slick2 ]*/
 .slick-slide {outline: none !important;}
 
-
-
-
-
 /*//////////////////////////////////////////////////////////////////
 [ LOADDING ]*/
 .animsition-loading-1 {
@@ -152,7 +148,6 @@
   }
 }
 
-
 /*//////////////////////////////////////////////////////////////////
 [ Header ]*/
 
@@ -181,7 +176,6 @@
   height: 124px;
 }
 
-
 /*==================================================================
 [ Top bar ]*/
 .top-bar {
@@ -196,7 +190,6 @@
   line-height: 1.8;
   color: #b2b2b2;
 }
-
 
 /*---------------------------------------------*/
 .right-top-bar a {
@@ -224,8 +217,6 @@
   border-top: 1px solid rgba(255,255,255,0.05);
   background-color: #222;
 }
-
-
 
 /*==================================================================
 [ Menu ]*/
@@ -291,8 +282,6 @@
   max-height: 100%;
 }
 
-
-
 /*------------------------------------------------------------------
 [ Menu ]*/
 
@@ -328,7 +317,7 @@
 .main-menu > li > a {
   font-family: Poppins-Medium;
   font-size: 14px;
-  color: #333;
+  color: rgb(36, 36, 36);
   padding: 5px 0px;
   transition: all 0.4s;
   -webkit-transition: all 0.4s;
@@ -446,7 +435,6 @@
   line-height: 1;
   cursor: pointer;
 }
-
 
 /*---------------------------------------------*/
 .icon-header-noti::after {
@@ -600,8 +588,6 @@
   color: #00b4d8;
 }
 
-
-
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 [ Header Mobile ]*/
 .wrap-header-mobile {
@@ -644,8 +630,6 @@
   bottom: 0;
   margin: auto;
 }
-
-
 
 /*------------------------------------------------------------------
 [ btn show menu ]*/
@@ -766,7 +750,6 @@
     display: none;
   }
 }
-
 
 /*//////////////////////////////////////////////////////////////////
 [ Sidebar ]*/
@@ -1159,8 +1142,6 @@
   content: "\f0d7";
 }
 
-
-
 /*//////////////////////////////////////////////////////////////////
 [ Slick1 ]*/
 .wrap-slick1 {
@@ -1488,13 +1469,13 @@
 }
 
 button.mfp-arrow-right {
-  background-image: url(../images/icons/icon-next.png);
+  background-image: url(../img/icons/icon-next.png);
   background-position: center center;
   background-repeat: no-repeat;
 }
 
 button.mfp-arrow-left {
-  background-image: url(../images/icons/icon-prev.png);
+  background-image: url(../img/icons/icon-prev.png);
   background-position: center center;
   background-repeat: no-repeat;
 }
@@ -1507,7 +1488,7 @@ button.mfp-close {
   right: 0;
   top: 0;
   color: transparent !important;
-  background-image: url(../images/icons/icon-close.png);
+  background-image: url(../img/icons/icon-close.png);
   background-position: center center;
   background-repeat: no-repeat;
   cursor: pointer !important;
@@ -1650,7 +1631,6 @@ button.mfp-close {
     margin-top: 0;
 }
 
-
 /*//////////////////////////////////////////////////////////////////
 [ Filter ]*/
 .show-search .icon-search,
@@ -1735,8 +1715,6 @@ button.mfp-close {
   .filter-col3,
   .filter-col4 {width: 100%;}
 }
-
-
 
 /*//////////////////////////////////////////////////////////////////
 [ Num Product ]*/
@@ -1935,8 +1913,6 @@ input.num-product::-webkit-inner-spin-button {
   line-height: 1.6;
 }
 
-
-
 /*//////////////////////////////////////////////////////////////////
 [ Block1 ]*/
 .block1 {
@@ -2083,15 +2059,15 @@ input.num-product::-webkit-inner-spin-button {
 ==================================================================*/
 .cl0 {color: #fff;}
 .cl1 {color: #00b4d8;}
-.cl2 {color: #333;}
+.cl2 {color: #000000;}
 .cl3 {color: #666;}
 .cl4 {color: #999;}
-.cl5 {color: #222;}
+.cl5 {color: #000000;}
 .cl6 {color: #888;}
 .cl7 {color: #b2b2b2;}
 .cl8 {color: #555;}
 .cl9 {color: #aaa;}
-.cl10 {color: #1d1d1d;}
+.cl10 {color: #000000;}
 .cl11 {color: #f9ba48;}
 .cl12 {color: #ccc;}
 
@@ -2369,13 +2345,9 @@ input.num-product::-webkit-inner-spin-button {
   line-height: 1.2857;
 }
 
-
-
-
 /*==================================================================
     SIZE SIZE SIZE SIZE SIZE SIZE SIZE SIZE SIZE SIZE SIZE SIZE SIZE 
 ==================================================================*/
-
 
 /*//////////////////////////////////////////////////////////////////
 [ Size ]*/
@@ -2594,7 +2566,6 @@ input.num-product::-webkit-inner-spin-button {
   height: 390px;
 }
 
-
 /*==================================================================
    BACKGROUND BACKGROUND BACKGROUND BACKGROUND BACKGROUND BACKGROUND 
 ==================================================================*/
@@ -2629,9 +2600,6 @@ input.num-product::-webkit-inner-spin-button {
   background-position: center center;
   background-repeat: no-repeat;
 }
-
-
-
 
 /*==================================================================
        BORDER BORDER  BORDER  BORDER  BORDER  BORDER  BORDER  BORDER
@@ -2989,8 +2957,6 @@ input.num-product::-webkit-inner-spin-button {
   right: -21px;
 }
 
-
-
 /*==================================================================
       PSEUDO PSEUDO PSEUDO PSEUDO PSEUDO PSEUDO PSEUDO PSEUDO PSEUDO
 ==================================================================*/
@@ -3001,9 +2967,6 @@ input.num-product::-webkit-inner-spin-button {
 .focus-in0:focus:-moz-placeholder { color:transparent; }
 .focus-in0:focus::-moz-placeholder { color:transparent; }
 .focus-in0:focus:-ms-input-placeholder { color:transparent; }
-
-
-
 
 /*//////////////////////////////////////////////////////////////////
 [ Hover ]*/
@@ -3070,7 +3033,6 @@ input.num-product::-webkit-inner-spin-button {
   border-color: #00b4d8;
 }
 
-
 /*---------------------------------------------*/
 .hov-ovelay1 {
   position: relative;
@@ -3116,9 +3078,6 @@ input.num-product::-webkit-inner-spin-button {
 .hov3:hover {
   opacity: 1;
 }
-
-
-
 
 /*==================================================================
   RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE
@@ -3212,7 +3171,6 @@ input.num-product::-webkit-inner-spin-button {
 
 }
 
-
 /*//////////////////////////////////////////////////////////////////
 [ SM ]*/
 @media (max-width: 575px) {
@@ -3260,7 +3218,6 @@ input.num-product::-webkit-inner-spin-button {
 
   
 }
-
 
 /*//////////////////////////////////////////////////////////////////
 [ SSM ]*/

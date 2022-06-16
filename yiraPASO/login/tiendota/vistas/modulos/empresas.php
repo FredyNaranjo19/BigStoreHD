@@ -33,7 +33,6 @@
                 <div class="col-md-5 col-xl-3 p-b-20">
 				<?php } ?>
 				</div>
-
 			</div>
 		</div>
 	</div>

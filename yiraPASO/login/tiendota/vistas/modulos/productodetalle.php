@@ -3,7 +3,7 @@
 	<section class="sec-product-detail bg0 p-t-65 p-b-60">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-6 col-lg-7 p-b-30">
+				<div class="col-md-6 col-lg-7 p-b-20">
 					<div class="p-l-25 p-r-30 p-lr-0-lg">
 						<div class="wrap-slick3 flex-sb flex-w">
 							<div class="wrap-slick3-dots"></div>
@@ -47,11 +47,11 @@
 				<div class="col-md-6 col-lg-5 p-b-30">
 					<div class="p-r-50 p-t-5 p-lr-0-lg">
 						<h4 class="mtext-105 cl2 js-name-detail p-b-14">
-							Lightweight Jacket
+							<!-- nombre producto -->
 						</h4>
 
 						<span class="mtext-106 cl2">
-							$58.79
+							$ <!-- precio -->
 						</span>
 
 						<!--  -->
@@ -137,31 +137,31 @@
 					<!-- Nav tabs -->
 					<ul class="nav nav-tabs" role="tablist">
 						<li class="nav-item p-b-10">
-							<a class="nav-link active" data-toggle="tab" href="#description" role="tab">Descripción</a>
+							<a class="nav-link active" data-toggle="tab" href="#descripcion" role="tab">Descripción</a>
 						</li>
 
 						<li class="nav-item p-b-10">
-							<a class="nav-link" data-toggle="tab" href="#information" role="tab">Informacion Adicional</a>
+							<a class="nav-link" data-toggle="tab" href="#informacion" role="tab">Informacion Adicional</a>
 						</li>
 
 						<li class="nav-item p-b-10">
-							<a class="nav-link" data-toggle="tab" href="#reviews" role="tab">Reseñas</a>
+							<a class="nav-link" data-toggle="tab" href="#reseñas" role="tab">Reseñas</a>
 						</li>
 					</ul>
 
 					<!-- Tab panes -->
 					<div class="tab-content p-t-43">
-						<!-- - -->
-						<div class="tab-pane fade show active" id="description" role="tabpanel">
-							<div class="how-pos2 p-lr-15-md">
+						<!-- descripcion del producto -->
+						<div class="tab-pane fade show active" id="descripcion" role="tabpanel">
+							<div class="how-pos2 p-lr-15-md ">
 								<p class="stext-102 cl6">
-									Aenean sit amet gravida nisi. Nam fermentum est felis, quis feugiat nunc fringilla sit amet. Ut in blandit ipsum. Quisque luctus dui at ante aliquet, in hendrerit lectus interdum. Morbi elementum sapien rhoncus pretium maximus. Nulla lectus enim, cursus et elementum sed, sodales vitae eros. Ut ex quam, porta consequat interdum in, faucibus eu velit. Quisque rhoncus ex ac libero varius molestie. Aenean tempor sit amet orci nec iaculis. Cras sit amet nulla libero. Curabitur dignissim, nunc nec laoreet consequat, purus nunc porta lacus, vel efficitur tellus augue in ipsum. Cras in arcu sed metus rutrum iaculis. Nulla non tempor erat. Duis in egestas nunc.
+									siu siu siu
 								</p>
 							</div>
 						</div>
 
-						<!-- - -->
-						<div class="tab-pane fade" id="information" role="tabpanel">
+						<!-- Caracteristicas del producto -->
+						<div class="tab-pane fade" id="informacion" role="tabpanel">
 							<div class="row">
 								<div class="col-sm-10 col-md-8 col-lg-6 m-lr-auto">
 									<ul class="p-lr-28 p-lr-15-sm">
@@ -180,11 +180,11 @@
 						</div>
 
 						<!-- - -->
-						<div class="tab-pane fade" id="reviews" role="tabpanel">
+						<div class="tab-pane fade" id="reseñas" role="tabpanel">
 							<div class="row">
 								<div class="col-sm-10 col-md-8 col-lg-6 m-lr-auto">
 									<div class="p-b-30 m-lr-15-sm">
-										<!-- Review -->
+										<!-- Comentarios y calif del producto -->
 										<div class="flex-w flex-t p-b-68">
 											<div class="wrap-pic-s size-109 bor0 of-hidden m-r-18 m-t-7">
 												<img src="vistas/img/avatar-02.jpg" alt="AVATAR">
@@ -268,9 +268,9 @@
 	</section>
 
 	<!-- Related Products -->
-	<section class="sec-relate-product bg0 p-t-45 p-b-105">
+	<section class="sec-relate-product bg0 p-t-25 p-b-85">
 		<div class="container">
-			<div class="p-b-45">
+			<div class="p-b-35">
 				<h3 class="ltext-106 cl5 txt-center">
 					Productos Recomendados
 				</h3>
@@ -293,11 +293,11 @@
 							<div class="block2-txt flex-w flex-t p-t-14">
 								<div class="block2-txt-child1 flex-col-l ">
 									<a href="productodetalle" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
-										Esprit Ruffle Shirt
+										<!-- nombre -->
 									</a>
 
 									<span class="stext-105 cl3">
-										$
+										$ <!-- precio-->
 									</span>
 								</div>
 
@@ -312,35 +312,6 @@
 					</div>
 
 					<div class="item-slick2 p-l-15 p-r-15 p-t-15 p-b-15">
-						<!-- Block2 -->
-						<div class="block2">
-							<div class="block2-pic hov-img0">
-								<img src="vistas/img/product-02.jpg" alt="IMG-PRODUCT">
-
-								<a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
-									Vista Rapida
-								</a>
-							</div>
-
-							<div class="block2-txt flex-w flex-t p-t-14">
-								<div class="block2-txt-child1 flex-col-l ">
-									<a href="productodetalle" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
-										Pieces Metallic Printed
-									</a>
-
-									<span class="stext-105 cl3">
-										$
-									</span>
-								</div>
-
-								<div class="block2-txt-child2 flex-r p-t-3">
-									<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
-										<img class="icon-heart1 dis-block trans-04" src="vistas/img/icons/icon-heart-01.png" alt="ICON">
-										<img class="icon-heart2 dis-block trans-04 ab-t-l" src="vistas/img/icons/icon-heart-02.png" alt="ICON">
-									</a>
-								</div>
-							</div>
-						</div>
 					</div>
 				</div>
 			</div>
