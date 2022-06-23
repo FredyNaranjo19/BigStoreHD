@@ -23,13 +23,21 @@ class BTProductos{
         return $response;
     }
 
-    static public function BTMostrarComentariosProducto($id_producto){
-        $response = BigShopProductos::BTMostrarComentariosProducto($id_producto);
+    static public function BSMostrarComentariosProducto($id_producto){
+        $response = BigShopProductos::BSMostrarComentariosProducto($id_producto);
         return $response;
     }
 
     static public function BTProductosBuscados($dato, $empresa){
         $response = BigShopProductos::BTProductosBuscados($dato, $empresa);
+        return $response;
+    }
+
+    static public function BTMostrarFavoritos($datos){
+
+        $tabla ="tv_productos_favoritos";
+
+        $response = BigShopProductos::BTProductoFavorito($tabla, $datos);
         return $response;
     }
 
@@ -46,8 +54,11 @@ class BTProductos{
                 
             }
         }
-        
-        
+    }
+
+    static public function BSComentariosPaginados($producto, $inferior){
+        $response = BigShopProductos::BSComentariosPaginados($producto, $inferior);
+        return $response;
     }
 
 }

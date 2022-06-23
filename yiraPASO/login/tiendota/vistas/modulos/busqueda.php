@@ -30,7 +30,7 @@
 								</a>
 
 								<span class="stext-105 cl3">
-									$
+									$<!---->
 								</span>
 							</div>
 

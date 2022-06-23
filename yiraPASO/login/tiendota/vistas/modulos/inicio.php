@@ -291,9 +291,9 @@
 			<div class="row isotope-grid">	
 				<div class="col-sm-6 col-md-4 col-lg-3 p-b-10 isotope-item">
 					<?php
-    		$productos = BTProductos::BTProductosLimitados();
-    		foreach ($productos as $producto) { 
-			?>
+    				$productos = BTProductos::BTProductosLimitados();
+    				foreach ($productos as $producto) { 
+					?>
 					<!-- Block2 -->
 					<div class="block2">
 						<div class="block2-pic hov-img0">
@@ -474,14 +474,14 @@
 							</div>
 
 							<!--  -->
-							<div class="flex-w flex-m p-l-100 p-t-40 respon7">
+							<div class="flex-w flex-m p-l-100 p-t-30 respon7">
 								<div class="flex-m bor9 p-r-10 m-r-11">
-									<a href="#" class="fs-20 cl3 hov-cl1 trans-04 lh-10 p-lr-5 p-tb-2 js-addwish-detail tooltip100" data-tooltip="Agregar a favoritos">
+									<a href="#" class="fs-20 cl3 hov-cl1 trans-04 lh-12 p-lr-7 p-tb-2 js-addwish-detail tooltip100" data-tooltip="Agregar a favoritos">
 										<i class="zmdi zmdi-favorite"></i>
 									</a>
 								</div>
 
-								<a href="#" class="fs-20 cl3 hov-cl1 trans-04 lh-10 p-lr-5 p-tb-2 m-r-8 tooltip100" data-tooltip="Pedir por Whatsapp">
+								<a href="#" class="fs-20 cl3 hov-cl1 trans-04 lh-12 p-lr-7 p-tb-2 m-r-8 tooltip100" data-tooltip="Pedir por Whatsapp">
 									<i class="fa fa-whatsapp"></i>
 								</a>
 							</div>
@@ -491,5 +491,3 @@
 			</div>
 		</div>
 	</div>
-
-	
