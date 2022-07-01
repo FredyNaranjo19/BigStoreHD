@@ -3,23 +3,23 @@
 class BTProductos{
 
 
-    static public function BTProductosLimitados(){
-        $response = BigShopProductos::BTMostrarProductosLimit();
+    static public function BSProductosLimitados(){
+        $response = BigShopProductos::BSMostrarProductosLimit();
         return $response;
     }
 
-    static public function BTgetEmpresaProductos($idEmpresa){
-        $response = BigShopProductos::BTgetEmpresaProductos($idEmpresa);
+    static public function BSgetEmpresaProductos($idEmpresa){
+        $response = BigShopProductos::BSgetEmpresaProductos($idEmpresa);
         return $response;
     }
 
-    static public function BTgetProductoPrecio($codigo){
-        $response = BigShopProductos::BTgetProductoPrecio($codigo);
+    static public function BSgetProductoPrecio($codigo){
+        $response = BigShopProductos::BSgetProductoPrecio($codigo);
         return $response;
     }
 
-    static public function BTgetProductoDescripcion($idProducto){
-        $response = BigShopProductos::BTgetProductoDescripcion($idProducto);
+    static public function BSgetProductoDescripcion($idProducto){
+        $response = BigShopProductos::BSgetProductoDescripcion($idProducto);
         return $response;
     }
 
@@ -28,27 +28,27 @@ class BTProductos{
         return $response;
     }
 
-    static public function BTProductosBuscados($dato, $empresa){
-        $response = BigShopProductos::BTProductosBuscados($dato, $empresa);
+    static public function BSProductosBuscados($dato, $empresa){
+        $response = BigShopProductos::BSProductosBuscados($dato, $empresa);
         return $response;
     }
 
-    static public function BTMostrarFavoritos($datos){
+    static public function BSMostrarFavoritos($datos){
 
         $tabla ="tv_productos_favoritos";
 
-        $response = BigShopProductos::BTProductoFavorito($tabla, $datos);
+        $response = BigShopProductos::BSProductoFavorito($tabla, $datos);
         return $response;
     }
 
-    static public function BTSaveComentario(){
+    static public function BSSaveComentario(){
         if(isset($_POST["ComentarioProducto"])){
 
             $tabla = "tv_productos_comentarios";
 
             $datos = array("id_producto" => $_POST["IdProductoComentario"], "id_cliente" => $_SESSION["id"], "comentario" =>["ComentarioProducto"], "puntos" => $_POST["ValoraProducto"]);
 
-            $response = BigShopProductos::BTSaveComentario($tabla, $datos);
+            $response = BigShopProductos::BSSaveComentario($tabla, $datos);
 
             if($respuesta == 'ok'){
                 

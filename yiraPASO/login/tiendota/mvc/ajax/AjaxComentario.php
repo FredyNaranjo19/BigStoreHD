@@ -77,14 +77,10 @@ class BSAjaxComentarios{
         if($comentar == "ok"){
             echo json_encode($comentar);
         }
-
     }
-
-
 }
 
 if (isset($_POST["rating"])) {
-
 	$comentario = new BSAjaxComentarios();
 	$comentario -> ratingProducto = $_POST["rating"];
 	$comentario -> comentarioProducto = $_POST["comentario"];
@@ -92,7 +88,6 @@ if (isset($_POST["rating"])) {
     $comentario -> idProducto = $_POST["producto"];
     $comentario -> idUsuarioProducto = $_POST["usuario"];
 	$comentario -> BSajaxCrearComentario();
-
 }
 
 ?>

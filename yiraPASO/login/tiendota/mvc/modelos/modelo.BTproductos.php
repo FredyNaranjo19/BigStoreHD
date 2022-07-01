@@ -1,7 +1,7 @@
 <?php 
 
 class BigShopProductos{
-    static public function BTMostrarProductosLimit(){
+    static public function BSMostrarProductosLimit(){
 
         $conex = Conexion::conectar()->prepare("SELECT * FROM tv_productos INNER JOIN productos ON productos.id_producto = tv_productos.id_producto LIMIT 16");
         $conex -> execute();
@@ -21,7 +21,7 @@ class BigShopProductos{
         $conex = NULL;
     }
 
-    static public function BTMostrarProducto(){
+    static public function BSMostrarProducto(){
 
         $conex = Conexion::conectar()->prepare("SELECT * FROM tv_productos INNER JOIN productos ON productos.id_producto = tv_productos.id_producto WHERE tv_productos.id_producto = :id_producto");
         $conex -> execute();
@@ -30,7 +30,7 @@ class BigShopProductos{
         $conex = NULL;
     }
 
-    static public function BTgetEmpresaProductos($idEmpresa){
+    static public function BSgetEmpresaProductos($idEmpresa){
         $conex = Conexion::conectar()->prepare("SELECT * FROM tv_productos INNER JOIN productos ON productos.id_producto = tv_productos.id_producto WHERE tv_productos.id_empresa = :id_empresa");
         $conex -> bindParam(":id_empresa", $idEmpresa, PDO::PARAM_STR);
         $conex -> execute();
@@ -39,7 +39,7 @@ class BigShopProductos{
         $conex = null;
     }
 
-    static public function BTgetProductoPrecio($codigo){
+    static public function BSgetProductoPrecio($codigo){
         $conex = Conexion::conectar()->prepare("SELECT * FROM tv_productos_listado WHERE codigo = :codigo");
         $conex -> bindParam(":codigo", $codigo, PDO::PARAM_STR);
         $conex -> execute();
@@ -48,7 +48,7 @@ class BigShopProductos{
         $conex = null;
     }
 
-    static public function BTgetProductoDescripcion($idProducto){
+    static public function BSgetProductoDescripcion($idProducto){
         $conex = Conexion::conectar()->prepare("SELECT * FROM producto WHERE id_producto = :id_producto");
         $conex -> bindParam(":id_producto", $idProducto, PDO::PARAM_STR);
         $conex -> execute();
@@ -57,7 +57,7 @@ class BigShopProductos{
         $conex = null;
     }
 
-    static public function BTcalifProducto($datos){
+    static public function BScalifProducto($datos){
         $conex = Conexion::conectar()->prepare("SELECT puntos, comentario FROM productos WHERE id_producto = :id_producto AND id_empresa = :id_empresa");
         $conex -> bindParam(":id_empresa", $datos["id_empresa"], PDO::PARAM_STR);
         $conex -> bindParam(":id_producto", $datos["id_producto"], PDO::PARAM_STR);
@@ -67,9 +67,8 @@ class BigShopProductos{
         $conex = null;
     }
 
-    static public function BTUpdatecalifProdu($datos){
+    static public function BSUpdatecalifProdu($datos){
         $conex = Conexion::conectar()->prepare("UPDATE productos SET puntos = :puntos, comentarios = :comentarios WHERE id_producto = :id_producto AND id_empresa =:id_empresa");
-
         $conex -> bindParam(":id_producto", $datos["id_producto"], PDO::PARAM_STR);
         $conex -> bindParam(":id_empresa", $datos["id_empresa"], PDO::PARAM_STR);
         $conex -> bindParam(":comentarios",$datos["comentarios"],PDO::PARAM_STR);
@@ -77,13 +76,12 @@ class BigShopProductos{
 
         if($conex -> execute()){ 
             return 'ok';    
-        }    -
-
+        }    
         $conex -> close();
         $conex = null;
     }
 
-    static public function BTProductoFavorito($tabla, $datos){
+    static public function BSProductoFavorito($tabla, $datos){
         if($datos["id_producto"] != NULL){
             $conex = Conexion::conectar()->prepare("SELECT * FROM $tabla WHERE id_producto = :id_producto AND id_cliente = :id_cliente");
             $conex -> bindParam(":id_producto", $datos["id_producto"], PDO::PARAM_STR);
@@ -91,7 +89,6 @@ class BigShopProductos{
             $conex -> execute();
             return $conex -> fetch();
         }else{
-
             $conex = Conexion::conectar()->prepare("SELECT * FROM $tabla WHERE id_cliente = :id_cliente");
             $conex -> bindParam(":id_cliente", $datos["id_cliente"], PDO::PARAM_STR);
             $conex -> execute();
@@ -108,12 +105,10 @@ class BigShopProductos{
         $conex -> bindParam(":id_producto", $datos["id_producto"], PDO::PARAM_STR);
 
         if($conex -> execute()){
-
             return "ok";
         }else{
             return "error";
         }
-
         $conex -> close();
         $conex = NULL;
     }
@@ -128,7 +123,6 @@ class BigShopProductos{
         }else{
             return "error";
         }
-
         $conex -> close();
         $conex = NULL;
     }
@@ -158,12 +152,9 @@ class BigShopProductos{
         }
 
         $sql .= "AND (p.id_empresa = '$empresa')";
-
         $conex = Conexion::conectar()->prepare($sql);
         $conex -> execute();
-
         return $conex -> fetchAll();
-
         $conex -> close();
         $conex = NULL;
         
@@ -189,7 +180,6 @@ class BigShopProductos{
         if ($conex -> execute()){
             return 'ok';
         }
-
         $conex -> close();
         $conex = NULL;
     }
@@ -205,7 +195,6 @@ class BigShopProductos{
         if($conex -> execute()){
             return 'ok';
         }
-
         $conex -> close();
         $conex = NULL;
     }
@@ -244,13 +233,11 @@ class BigShopProductos{
         if($conex -> execute()){
             return 'ok';
         }
-
         $conex -> close();
         $conex = NULL;
     }
 
     static public function BSComentarioUsuarioProducto($producto, $cliente){
-
         $conex = Conexion::conectar()->prepare("SELECT * FROM tv_productos_comentarios WHERE id_cliente = :id_cliente AND id_producto = :id_producto");
         $conex ->bindParam(":id_producto", $producto, PDO::PARAM_STR);
         $conex ->bindParam(":id_cliente", $cliente, PDO::PARAM_STR);

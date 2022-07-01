@@ -11,13 +11,13 @@ class ProductosAjaxBS{
 
         $datos = array("id_producto" => $this -> FavoritoIdProducto, "id_cliente" => $this -> FavoritoIdCliente);
 
-    $consulta = BigShopProductos::BTProductoFavorito($tabla, $datos);
+    $consulta = BigShopProductos::BSProductoFavorito($tabla, $datos);
     
     if($consulta == false){
 
-        $response = BigShopProductos::BTProductoFavorito($tabla, $datos);
+        $response = BigShopProductos::BSProductoFavorito($tabla, $datos);
     }else{
-        $response = BigShopProductos::BTEliminarProductoFavorito($tabla, $datos);
+        $response = BigShopProductos::BSEliminarProductoFavorito($tabla, $datos);
     }
 
     echo json_encode($response);
