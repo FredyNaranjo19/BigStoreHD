@@ -61,7 +61,6 @@ class BigShopProductos{
         $conex = Conexion::conectar()->prepare("SELECT puntos, comentario FROM productos WHERE id_producto = :id_producto AND id_empresa = :id_empresa");
         $conex -> bindParam(":id_empresa", $datos["id_empresa"], PDO::PARAM_STR);
         $conex -> bindParam(":id_producto", $datos["id_producto"], PDO::PARAM_STR);
-
         $conex -> execute();
         return $conex -> fetch();
         $conex -> close();
@@ -137,11 +136,9 @@ class BigShopProductos{
     static public function BSMostrarDerivado($tabla, $datos){
 
         $conex = Conexion::conectar()->prepare("SELECT * FROM tv_productos as t, productos as p WHERE p.codigo = :codigo AND p.id_producto != :id_producto AND t.id_empresa = :id_empresa AND t.id_producto = p.id_producto");
-
         $conex -> bindParam(":codigo", $datos["codigo"], PDO::PARAM_STR);
         $conex -> bindParam(":id_empresa", $datos["id_empresa"], PDO::PARAM_STR);
         $conex -> bindParam("id_producto", $datos["id_producto"], PDO::PARAM_STR);
-
         $conex -> execute();
         return $conex -> fetchAll();
         $conex -> close();
@@ -200,7 +197,6 @@ class BigShopProductos{
     static public function BSUpdateComentarioProducto($datos){
 
         $conex = Conexion::conectar()->prepare("UPDATE tv_productos_comentarios SET puntos = :puntos, comentario = :comentario WHERE id_producto = :id_producto AND id_cliente =: id_cliente;");
-
         $conex -> bindParam(":id_producto", $datos["id_producto"], PDO::PARAM_STR);
         $conex -> bindParam(":id_cliente", $datos["id_cliente"], PDO::PARAM_STR);
         $conex -> bindParam(":comentario", $datos["comentario"], PDO::PARAM_STR);
@@ -232,7 +228,6 @@ class BigShopProductos{
         $conex = Conexion::conectar()->prepare("SELECT puntos, comentarios FROM productos WHERE id_producto = :id_producto AND id_empresa = :id_empresa");
         $conex -> bindParam(":id_empresa", $datos["id_empresa"], PDO::PARAM_STR);
         $conex -> bindParam(":id_producto", $datos["id_producto"], PDO::PARAM_STR);
-        
         $conex ->execute();
         return $conex -> fetch();
         $conex -> close();
@@ -241,7 +236,6 @@ class BigShopProductos{
 
     static public function BSModificarPuntuacionProducto($datos){
         $conex = Conexion::conectar()->prepare("UPDATE productos SET puntos = :puntos, comentarios = :comentarios WHERE id_producto = :id_producto AND id_empresa = :id_empresa");
-
         $conex -> bindParam(":id_producto", $datos["id_producto"], PDO::PARAM_STR);
         $conex -> bindParam(":id_empresa", $datos["id_empresa"], PDO::PARAM_STR);
         $conex -> bindParam(":comentarios", $datos["comentarios"], PDO::PARAM_STR);
@@ -251,6 +245,43 @@ class BigShopProductos{
             return 'ok';
         }
 
+        $conex -> close();
+        $conex = NULL;
+    }
+
+    static public function BSComentarioUsuarioProducto($producto, $cliente){
+
+        $conex = Conexion::conectar()->prepare("SELECT * FROM tv_productos_comentarios WHERE id_cliente = :id_cliente AND id_producto = :id_producto");
+        $conex ->bindParam(":id_producto", $producto, PDO::PARAM_STR);
+        $conex ->bindParam(":id_cliente", $cliente, PDO::PARAM_STR);
+        $conex ->execute();
+        if($conex->fetch()==null||$conex->fetch()==""){
+            return "false";
+        }else{
+            return $conex ->fetch();
+        }
+        $conex->close();
+        $conex = NULL;
+    }
+
+    static public function BSMostrarProductosDerivados($tabla, $datos){
+
+        $conex = Conexion::conectar()->prepare("SELECT * FROM tv_productos as t, productos as p
+        WHERE p.codigo = :codigo AND p.id_producto != :id_producto AND t.id_empresa = :id_empresa AND t.id_producto = p.id_producto AND stock > 0");
+        $conex -> bindParam(":codigo", $datos["codigo"], PDO::PARAM_STR);
+        $conex -> bindParam(":id_empresa", $datos["id_empresa"], PDO::PARAM_STR);
+        $conex -> bindParam(":id_producto", $datos["id_producto"], PDO::PARAM_STR);
+        $conex -> execute();
+        return $conex -> fetchAll();
+        $conex -> close();
+        $conex = NULL;
+    }
+
+    static public function BSMostrarInformacionGeneralProducto($tabla, $item, $valor){
+        $conex = Conexion::conectar()->prepare("SELECT * FROM $tabla WHERE $item = :$item");
+        $conex -> bindParam(":".$item, $valor, PDO::PARAM_STR);
+        $conex -> execute();
+        return $conex -> fetch();
         $conex -> close();
         $conex = NULL;
     }
